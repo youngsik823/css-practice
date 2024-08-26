@@ -1,0 +1,24 @@
+.frame {
+    margin: 15px;
+    @at-root .btn {
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        margin: 10px;
+        @at-root &.confirm {
+            background: yellowgreen;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        @at-root &.warning {
+            background: crimson;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

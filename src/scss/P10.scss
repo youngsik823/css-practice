@@ -1,0 +1,56 @@
+$color-primary: #222;
+$color-secondary: #333;
+$bgc-item: #eee;
+$portfolio-item-w: 300px;
+$portfolio-item-h: 300px;
+$portfolio-images-url: "../../public/image/";
+$portfolio-item-bdrs: 10px;
+
+.portfolio {
+    padding: 20px;
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .portfolio-items {
+        width: 1200px;
+        margin: auto;
+        display: grid;
+        row-gap: 15px;
+        column-gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        .portfolio-item {
+            border: 1px solid #000;
+            width: $portfolio-item-w;
+            height: $portfolio-item-h;
+            border-radius: $portfolio-item-bdrs;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &:nth-child(1) {
+                background-image: url($portfolio-images-url + "basic-class-main-cover-02.png");
+            }
+            &:nth-child(2) {
+                background-image: url($portfolio-images-url + "basic-class-main-cover-03.png");
+            }
+            &:nth-child(3) {
+                background-image: url($portfolio-images-url + "basic-class-main-cover-04.png");
+            }
+            &:nth-child(4) {
+                background-image: url($portfolio-images-url + "basic-class-main-cover-05.png");
+            }
+            &:nth-child(5) {
+                background-image: url($portfolio-images-url + "basic-class-main-cover-06.png");
+            }
+            &:nth-child(6) {
+                background-image: url($portfolio-images-url + "basic-class-main-cover-07.png");
+            }
+            &:nth-child(7) {
+                background-image: url($portfolio-images-url + "best-class-main-cover-01.png");
+            }
+            &:nth-child(8) {
+                background-image: url($portfolio-images-url + "best-class-main-cover-02.png");
+            }
+        }
+    }
+}

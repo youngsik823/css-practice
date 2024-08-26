@@ -1,0 +1,43 @@
+.signIn {
+    font-size: 15px;
+    .sign-inner {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 20px;
+        width: 350px;
+    }
+    h1 {
+        text-align: center;
+        font-weight: normal;
+        margin-top: 0;
+    }
+    input[type="button"],
+    input[type="email"],
+    input[type="password"],
+    input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        outline: none;
+    }
+    input[type="button"] {
+        margin-bottom: 20px;
+        background-color: #fff;
+        cursor: pointer;
+        &:hover {
+            background-color: #badc58;
+            color: #fff;
+        }
+    }
+    input[type="submit"] {
+        background-color: #27ae60;
+        color: #fff;
+        cursor: pointer;
+    }
+    input[type="email"]:focus {
+        background-color: #f3e59f;
+    }
+}

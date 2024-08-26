@@ -1,0 +1,33 @@
+// header h1,
+// section h1,
+// footer h1 {
+//     font-size: 30px;
+//     font-weight: normal;
+// }
+// header h1::before, 
+// section h1::before,
+// footer h1::before{
+    // content: '';
+    // width: 10px;
+    // height: 30px;
+    // background-color: crimson;
+    // display: inline-block;
+    // border-radius: 5px;
+    // margin-right: 10px;
+    // transform: translateY(3px);
+// }
+.p8-container :is(header, section, footer) h1 {
+    font-size: 30px;
+    font-weight: normal;
+
+    &::before {
+        content: '';
+        width: 10px;
+        height: 30px;
+        background-color: crimson;
+        display: inline-block;
+        border-radius: 5px;
+        margin-right: 10px;
+        transform: translateY(3px);
+    }
+}
